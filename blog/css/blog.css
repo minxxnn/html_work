@@ -1,0 +1,27 @@
+body { margin: 0; }
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.blog-content {
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+.profile_img {
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+.blog-img {
+    width: 20%;
+    height: 200px;
+    float: left;
+    vertical-align: middle;
+}
+.blog-name {
+    width: 100px;
+    display: block;
+    float: left;
+}
