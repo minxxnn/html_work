@@ -11,6 +11,7 @@ body {
     background-position: center;
     padding: 1px;
     text-align: center;
+    position: relative;
 }
 .main-title {
     /* div 자식은 마진이 서로 겹침 현상이 발생*/
@@ -31,6 +32,19 @@ body {
     font-size: 20px;
     padding: 15px;
     border-radius: 5px;
-    border: none
-    ;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+}
+
+.explain-box {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  top: -40px;
 }
