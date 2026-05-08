@@ -1,15 +1,15 @@
-li{
-    color: red;
+li {
+  color: red;
 }
-h2{
-    color: darkblue;
+h2 {
+  color: darkblue;
 }
-h3{
-    color: green;
+h3 {
+  color: green;
 }
-.other{
-    text-decoration: underline;
+.other {
+  text-decoration: underline;
 }
-#select{
-    font-size: 30px;
+#select {
+  font-size: 30px;
 }
