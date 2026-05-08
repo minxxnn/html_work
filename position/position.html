@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,9 @@
     top: 0;
     left: 0;
   }
-  /* position : relative 이면 내 원래의 위치를 기준으로 이동 */
+  /* position : relative : 내 원래의 위치를 기준으로 이동 */
   /* position을 주면 공중에 붕 떠버린다. */
-  /* position : absolute 는 나의 부모를 기준으로 해서 움직이는 아이 */
+  /* position : absolute : 나의 부모 기준으로 해서 움직이는 아이 */
   /* 단, 내 조상 중 position : relative 로 선언된 곳이 기준 */
   .child {
     width: 50px;
@@ -31,16 +31,16 @@
     top: 100px;
     left: 100px;
   }
-  /* fixed : ex) 카톡상담채널, 맨 위로 이동 */
+  /* fixed : 카톡상당채널 / 맨 위로 이동 */
   .fixed {
     position: fixed;
     width: 50px;
     height: 50px;
     top: 10px;
     left: 400px;
-    background-color: red;
+    background: red;
   }
-  /* sticky : ex) 상단 메뉴, 테이블의 헤더 */
+  /* sticky - 주로 상단 메뉴 / 테이블의 헤더 */
   .sticky {
     position: sticky;
     top: 0;

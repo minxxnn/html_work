@@ -1,42 +1,46 @@
 body {
-    margin: 0;
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 .main-background {
-    width: 100%;
-    height: 500px;
-    background-image: url("../images/shoes_background.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 1px;
-    text-align: center;
-    position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/shoes_background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  text-align: center;
+  position: relative;
 }
 .main-title {
-    /* div 자식은 마진이 서로 겹침 현상이 발생*/
-    /* 해결 방법은 부모에게 padding: 1px 주어서 해결 */
-    color: white;
-    font-size: 40px;
-    margin-top: 100px;
+  /* div 자식은 마진이 서로 겹침 현상이 발생 */
+  /* 해결 방법은 부모에게 padding: 1px 주어서 해결 */
+  color: white;
+  font-size: 40px;
+  margin-top: 100px;
 }
 
 .main-content {
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .main-button {
-    background-color: white;
-    font-size: 20px;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 100px;
+  background-color: white;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
 }
 
 .main-button:hover {
@@ -93,14 +97,14 @@ div, input, textarea {
 .w-50 {
   width: 50%;
   padding: 10px;
-  float : left 
+  float: left;
 }
 
 .nav-container {
   display: flex;
   height: 50px;
   padding: 10px;
-  align-items: center;
+  
   justify-content: center;
   background: black;
   color: white;
@@ -110,8 +114,6 @@ div, input, textarea {
   margin-right: 10px;
 }
 
-이렇게 수정해 주세요
-
 .product-container {
   width: 80%;
   max-width: 1000px;
@@ -120,51 +122,97 @@ div, input, textarea {
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .product-container div {
   /* float: left; */
-  width: 25%;
+  flex: 1 1 25%;
+  /* width: 25%; */
+  padding: 10px;
   text-align: center;
 }
 
-/* 미디어뭐리 : 위치는 보통 css의 맨 마지막에 위치 */
+.product-container i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+  margin: 20px auto 10px auto;
+}
 
+/* 신발 진열 처리 */
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 1s;
+}
+.overlay:hover {
+  opacity: 1;
+}
+
+
+/* 미디어쿼리 : 위치는 보통 css의 맨 마지막에 위치 */
 /* 현재 브라우저 폭이 1200px 이하 될 경우 */
-@media screen and (max-width: 120px) {
+@media screen and (max-width: 1200px){
   .main-title {
     font-size: 30px;
   }
-
   .product-container {
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .product-container > div {
+    flex: 1 1 50%;  /* 2개씩 1 줄 */
+  }
 }
-
-.product-container > div {
-  flex: 1 1 50%; /* 2개씩 1줄 */
-}
-}
-
 /* 현재 브라우저 폭이 768px 이하 될 경우 */
-@media screen and (max-width: 120px) {
+@media screen and (max-width: 768px){
   .main-title {
     font-size: 20px;
   }
-
   .product-container > div {
-    /* flex: 1 1 100%;
-      첫번째 : flex-basis (기본크기)
-      두번째 : shrink (줄어들기)
-      세번째 : flex-grow (늘어나기)  
+    /* flex: 1 1 100%; 
+       첫번째 : flex-basis(기본크기)
+       두번째 : shrink (줄어들기)
+       세번째 : flex-grow (늘어나기)
     */
-  flex: 1 1 100%; /* 1개씩 1줄 */
-}
+    flex: 1 1 100%;  /* 1개씩 1 줄 */
+    margin: 0 auto;
+  }
 }
 
 /* 현재 브라우저 폭이 576px 이하 될 경우 */
-@media screen and (max-width: 120px) {
+@media screen and (max-width: 576px){
   .main-title {
     font-size: 10px;
   }
 }
+
