@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-POP 그룹 소개</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; /* 한글 폰트 */
+      background-color: whitesmoke; /* 연한 회색 배경 */
+    }
+    .card {
+      border: 1px solid lightgray; /* 카드 테두리 */
+      border-radius: 8px;          /* 모서리 둥글게 */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== 헤더 ===== -->
+  <nav class="bg-dark text-white p-3 mb-4">
+    <!-- bg-dark: 어두운 배경 / text-white: 글자 흰색 / p-3: 안쪽 여백 / mb-4: 아래 여백 -->
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- container: 가운데 고정 너비 -->
+      <!-- d-flex: 가로 배치 -->
+      <!-- justify-content-between: 양쪽 끝 정렬 -->
+      <!-- align-items-center: 세로 가운데 정렬 -->
+      <h1 class="fs-4 fw-bold text-white">K-POP 그룹 소개</h1>
+      <!-- fs-4: 폰트 크기 / fw-bold: 굵게 -->
+      <span class="text-light opacity-75">2024 Edition</span>
+      <!-- text-light opacity-75: 회색 글자 -->
+    </div>
+  </nav>
+
+  <!-- ===== 메인 ===== -->
+  <div class="container">
+    <!-- container: 가운데 정렬 고정 너비 박스 -->
+
+    <!-- 소개 텍스트 -->
+    <p class="text-center text-muted mb-4">현재 활동 중인 K-POP 그룹을 소개합니다</p>
+    <!-- text-center: 가운데 정렬 / text-muted: 회색 / mb-4: 아래 여백 -->
+
+    <!-- ===== 그리드: 3열 카드 ===== -->
+    <div class="row mb-4">
+      <!-- row: 그리드 행 / mb-4: 아래 여백 -->
+
+      <div class="col-12 col-md-4 mb-3">
+        <!-- col-12: 모바일에서 전체 너비 -->
+        <!-- col-md-4: 태블릿 이상에서 12칸 중 4칸 (1/3) -->
+        <!-- mb-3: 카드 간 아래 여백 -->
+        <div class="card p-3 bg-light">
+          <!-- card: 카드 스타일 / p-3: 안쪽 여백 / bg-light: 밝은 회색 배경 -->
+          <h2 class="fs-5 fw-bold">IVE</h2>
+          <p class="text-muted">스타쉽 엔터테인먼트</p>
+          <p>안유진, 가을, 레이, 장원영, 리즈, 이서로 구성된 6인조 걸그룹</p>
+          <span class="btn btn-outline-danger btn-sm">팔로우</span>
+          <!-- btn: 버튼 기본 / btn-outline-danger: 빨간 테두리 버튼 / btn-sm: 작은 버튼 -->
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card p-3 bg-light">
+          <h2 class="fs-5 fw-bold">aespa</h2>
+          <p class="text-muted">SM 엔터테인먼트</p>
+          <p>카리나, 지젤, 윈터, 닝닝으로 구성된 4인조 걸그룹</p>
+          <span class="btn btn-outline-danger btn-sm">팔로우</span>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card p-3 bg-light">
+          <h2 class="fs-5 fw-bold">NewJeans</h2>
+          <p class="text-muted">ADOR</p>
+          <p>민지, 하니, 다니엘, 해린, 혜인으로 구성된 5인조 걸그룹</p>
+          <span class="btn btn-outline-danger btn-sm">팔로우</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 구분선 -->
+    <hr class="mb-4">
+
+    <!-- ===== 하단 2열 레이아웃 ===== -->
+    <div class="row">
+      <!-- row: 그리드 행 -->
+
+      <!-- 최신 앨범 -->
+      <div class="col-12 col-md-6 mb-3">
+        <!-- col-12: 모바일 전체 / col-md-6: 태블릿 이상 절반 -->
+        <div class="card p-3">
+          <h2 class="fs-5 fw-bold mb-3">최신 앨범</h2>
+          <ul class="list-unstyled">
+            <!-- list-unstyled: 기본 불릿(•) 제거 -->
+            <li class="d-flex justify-content-between border-bottom py-2">
+              <!-- d-flex: 가로 배치 / justify-content-between: 양쪽 끝 정렬 -->
+              <!-- border-bottom: 아래 테두리 / py-2: 위아래 padding -->
+              <span>IVE - SWITCH</span>
+              <span class="text-muted">2024.04</span>
+            </li>
+            <li class="d-flex justify-content-between border-bottom py-2">
+              <span>aespa - Armageddon</span>
+              <span class="text-muted">2024.05</span>
+            </li>
+            <li class="d-flex justify-content-between py-2">
+              <span>NewJeans - How Sweet</span>
+              <span class="text-muted">2024.05</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 공지사항 -->
+      <div class="col-12 col-md-6 mb-3">
+        <div class="card p-3">
+          <h2 class="fs-5 fw-bold mb-3">공지사항</h2>
+          <div class="d-flex gap-2 mb-2">
+            <!-- d-flex: 가로 배치 / gap-2: 항목 간 간격 8px / mb-2: 아래 여백 -->
+            <span class="btn btn-danger btn-sm">NEW</span>
+            <span>2024 월드투어 일정 공개</span>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <span class="btn btn-warning btn-sm">HOT</span>
+            <span>팬미팅 티켓 오픈 안내</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="btn btn-secondary btn-sm">INFO</span>
+            <span>공식 MD 상품 출시</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== 푸터 ===== -->
+  <footer class="bg-dark text-white text-center p-3 mt-4">
+    <!-- bg-dark: 어두운 배경 / text-white: 흰 글자 / text-center: 가운데 정렬 -->
+    <!-- p-3: 안쪽 여백 / mt-4: 위 여백 -->
+    <p class="text-light opacity-75 mb-0">© 2024 K-POP 소개 페이지</p>
+    <!-- mb-0: 아래 여백 제거 -->
+  </footer>
+
+</body>
+</html>
